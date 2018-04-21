@@ -1,0 +1,15 @@
+.app {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+header {
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    padding: 5px 0;
+    width: 100vw;
+    background-color: #d2d2d2;
+}

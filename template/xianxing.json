@@ -1,0 +1,31 @@
+{
+  "title": "东山公司限行模板",
+  "background": [
+    {
+      "title": "morning",
+      "url": "http://oax4654gb.bkt.clouddn.com/2018/4/21/WechatIMG1.jpeg"
+    },
+    {
+      "title": "road",
+      "url": "http://oax4654gb.bkt.clouddn.com/2018/4/21/WechatIMG2.jpeg"
+    },
+    {
+      "title": "rain",
+      "url": "http://oax4654gb.bkt.clouddn.com/2018/4/21/WechatIMG3.jpeg"
+    },
+    {
+      "title": "light",
+      "url": "http://oax4654gb.bkt.clouddn.com/2018/4/21/WechatIMG4.jpeg"
+    },
+    {
+      "title": "city",
+      "url": "http://oax4654gb.bkt.clouddn.com/2018/4/21/WechatIMG5.jpeg"
+    }
+  ],
+  "payload": [
+    {
+      "content": "1",
+      "css": "background-position: absolute; left: 0; right: 0; top: 0;"
+    }
+  ]
+}
