@@ -15,14 +15,22 @@ const bgPics = template.background;
 class App extends React.Component {
     state = {
         url: null,
+        title: null,
     };
 
     onBgChange = e => {
-        this.setState({ url: e.target.value });
+        const fileName = $(e.target)
+            .find('option:selected')
+            .text();
+
+        this.setState({
+            url: e.target.value,
+            title: `${fileName}.jpeg`,
+        });
     };
 
     render() {
-        const { url } = this.state;
+        const { url, title } = this.state;
 
         return (
             <div className="app">
@@ -35,7 +43,7 @@ class App extends React.Component {
                     onSelect={this.onBgChange}
                 />
                 {url && (
-                    <Preview url={this.state.url}>
+                    <Preview url={url} title={title}>
                         <span>placeholder</span>
                     </Preview>
                 )}
