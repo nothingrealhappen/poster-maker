@@ -3,7 +3,7 @@
   "background": [
     {
       "title": "morning",
-      "url": "http://oax4654gb.bkt.clouddn.com/2018/4/21/WechatIMG1.jpeg"
+      "url": "http://oax4654gb.bkt.clouddn.com/2018/4/25/morning.jpg"
     },
     {
       "title": "road",
@@ -11,22 +11,22 @@
     },
     {
       "title": "rain",
-      "url": "http://oax4654gb.bkt.clouddn.com/2018/4/21/WechatIMG3.jpeg"
+      "url": "http://oax4654gb.bkt.clouddn.com/2018/4/25/rain.jpg"
     },
     {
       "title": "light",
-      "url": "http://oax4654gb.bkt.clouddn.com/2018/4/21/WechatIMG4.jpeg"
+      "url": "http://oax4654gb.bkt.clouddn.com/2018/4/25/light.jpg"
     },
     {
       "title": "city",
-      "url": "http://oax4654gb.bkt.clouddn.com/2018/4/21/WechatIMG5.jpeg"
+      "url": "http://oax4654gb.bkt.clouddn.com/2018/4/25/city.jpg"
     }
   ],
   "payload": [
     {
       "content": "${number}",
       "data": {
-        "number": "(new Date().getDay() + 1).toString().slice(-1)"
+        "number": "(new Date().getDay()).toString().slice(-1)"
       },
       "css": "{\"position\":\"absolute\",\"left\":\"32%\",\"top\":\"48.8%\",\"color\":\"red\",\"fontSize\":\"50px\",\"fontWeight\":\"bold\",\"fontFamily\":\"sans-serif\"}"
     },
@@ -45,7 +45,7 @@
         "day": "new Date().getDate()",
         "weekDay": "['日', '一', '二', '三', '四', '五', '六'][new Date().getDay()]"
       },
-      "css": "{\"position\":\"absolute\",\"left\":\"28%\",\"top\":\"41.8%\",\"color\":\"#f9f9f9\",\"fontSize\":\"16px\",\"fontWeight\":\"bold\",\"fontFamily\":\"sans-serif\"}"
+      "css": "{\"position\":\"absolute\",\"left\":\"27%\",\"top\":\"41.8%\",\"color\":\"#f9f9f9\",\"fontSize\":\"16px\",\"fontWeight\":\"bold\",\"fontFamily\":\"sans-serif\", \"letterSpacing\": \"0.5px\"}"
     }
   ]
 }

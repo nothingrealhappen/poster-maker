@@ -9,3 +9,24 @@
 .preview-pic {
     width: 100vw;
 }
+
+.preview-download {
+    background: #e82121;
+    background-image: linear-gradient(to bottom, #e82121, #b51717);
+    -webkit-border-radius: 11;
+    -moz-border-radius: 11;
+    border-radius: 11px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 14px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: inline-block;
+
+    &:hover {
+        background: #e82121;
+        background-image: linear-gradient(to bottom, #e82121, #801818);
+        text-decoration: none;
+    }
+}

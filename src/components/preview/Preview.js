@@ -21,7 +21,11 @@ class Preview extends Component {
         const { url, payload } = this.props;
         return (
             <div className="preview">
-                <a href="javascript:;" onClick={this.download}>
+                <a
+                    href="javascript:;"
+                    onClick={this.download}
+                    className="preview-download"
+                >
                     下载图片
                 </a>
                 <div className="preview-area">

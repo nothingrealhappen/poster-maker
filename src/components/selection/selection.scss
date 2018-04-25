@@ -1,3 +1,11 @@
 select {
     display: flex;
+    background-color: #f5f5f5;
+    width: 50vw;
+    margin: 10px 0;
+    text-align: center;
+
+    option {
+        line-height: 2.5;
+    }
 }
