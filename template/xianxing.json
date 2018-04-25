@@ -26,24 +26,24 @@
     {
       "content": "${number}",
       "data": {
-        "number": "(new Date().getDay()).toString().slice(-1)"
+        "number": "(new Date().getDay() + 1).toString().slice(-1)"
       },
       "css": "{\"position\":\"absolute\",\"left\":\"32%\",\"top\":\"48.8%\",\"color\":\"red\",\"fontSize\":\"50px\",\"fontWeight\":\"bold\",\"fontFamily\":\"sans-serif\"}"
     },
     {
       "content": "${number}",
       "data": {
-        "number": "(new Date().getDay() + 5).toString().slice(-1)"
+        "number": "(new Date().getDay() + 6).toString().slice(-1)"
       },
       "css": "{\"position\":\"absolute\",\"left\":\"61.5%\",\"top\":\"48.8%\",\"color\":\"red\",\"fontSize\":\"50px\",\"fontWeight\":\"bold\",\"fontFamily\":\"sans-serif\"}"
     },
     {
       "content": "${year}年${month}月${day}日&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;周${weekDay}",
       "data": {
-        "year": "new Date().getFullYear()",
-        "month": "+new Date().getMonth() + 1",
-        "day": "new Date().getDate()",
-        "weekDay": "['日', '一', '二', '三', '四', '五', '六'][new Date().getDay()]"
+        "year": "new Date(new Date().getTime() + (24 * 60 * 60 * 1000)).getFullYear()",
+        "month": "+new Date(new Date().getTime() + (24 * 60 * 60 * 1000)).getMonth() + 1",
+        "day": "new Date(new Date().getTime() + (24 * 60 * 60 * 1000)).getDate()",
+        "weekDay": "['日', '一', '二', '三', '四', '五', '六'][new Date(new Date().getTime() + (24 * 60 * 60 * 1000)).getDay()]"
       },
       "css": "{\"position\":\"absolute\",\"left\":\"27%\",\"top\":\"41.8%\",\"color\":\"#f9f9f9\",\"fontSize\":\"16px\",\"fontWeight\":\"bold\",\"fontFamily\":\"sans-serif\", \"letterSpacing\": \"0.5px\"}"
     }
