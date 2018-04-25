@@ -1,39 +1,56 @@
 import _ from 'lodash';
 import $ from 'jquery';
 import React, { Component } from 'react';
-import domToImage from 'dom-to-image';
+import domToImage from 'retina-dom-to-image';
+
+import loadingSvg from './loading.svg';
+import fileSaver from 'file-saver';
 
 import './preview.scss';
 
 class Preview extends Component {
-    download = () => {
-        domToImage.toJpeg(this.$preview).then(dataUrl => {
-            const link = document.createElement('a');
-            link.download = this.props.fileName;
-            link.target = '_blank';
-            link.href = dataUrl;
+    state = {
+        isLoaded: false,
+    };
 
-            $(link).click();
-        });
+    download = () => {
+        domToImage
+            .toBlob(this.$preview)
+            .then(blob => {
+                fileSaver.saveAs(blob, this.props.fileName);
+            })
+            .catch(err => {
+                alert(err.message);
+            });
+    };
+
+    onLoad = () => {
+        this.setState({ isLoaded: true });
     };
 
     render() {
         const { url, payload } = this.props;
         return (
             <div className="preview">
-                <a
-                    href="javascript:;"
-                    onClick={this.download}
-                    className="preview-download"
+                {this.state.isLoaded ? (
+                    <button
+                        className="preview-download"
+                        onClick={this.download}
+                    >
+                        下载图片
+                    </button>
+                ) : (
+                    <img src={loadingSvg} />
+                )}
+                <div
+                    className="preview-area"
+                    ref={node => (this.$preview = node)}
                 >
-                    下载图片
-                </a>
-                <div className="preview-area">
                     <img
+                        onLoad={this.onLoad}
                         alt="preview"
                         src={url}
                         className="preview-pic"
-                        ref={node => (this.$preview = node)}
                     />
                     {payload.map(({ content, css, data }, index) => (
                         <div
