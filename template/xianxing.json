@@ -1,25 +1,26 @@
 {
   "title": "东山公司限行模板",
+
   "background": [
     {
       "title": "morning",
-      "url": "http://oax4654gb.bkt.clouddn.com/2018/5/30/morning.jpg"
+      "url": "https://ibb.co/j9TDJJ"
     },
     {
       "title": "road",
-      "url": "http://oax4654gb.bkt.clouddn.com/2018/5/30/background-road.jpg"
+      "url": "https://ibb.co/gdCJky"
     },
     {
       "title": "rain",
-      "url": "http://oax4654gb.bkt.clouddn.com/2018/5/30/rain.jpg"
+      "url": "https://ibb.co/jwatJJ"
     },
     {
       "title": "light",
-      "url": "http://oax4654gb.bkt.clouddn.com/2018/5/30/light.jpg"
+      "url": "https://ibb.co/dfesCd"
     },
     {
       "title": "city",
-      "url": "http://oax4654gb.bkt.clouddn.com/2018/5/30/city.jpg"
+      "url": "https://ibb.co/fedDJJ"
     }
   ],
   "payload": [
